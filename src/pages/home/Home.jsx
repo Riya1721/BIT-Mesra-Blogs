@@ -4,8 +4,8 @@ import SearchBar from "../../components/Home/searchbar/SearchBar";
 import Navbar from "../../components/Common/navbar/Navbar";
 import { useState, useEffect } from "react";
 import { auth, db } from "../../backend/firebase-config";
-import { collection, doc, getDocs, query, where } from "firebase/firestore";
-import spinner from "../../Images/Loading/Spinner.gif";
+import { collection, getDocs } from "firebase/firestore";
+
 import "./Home.css";
 import { useNavigate } from "react-router-dom";
 
