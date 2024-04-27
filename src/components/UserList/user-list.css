@@ -1,0 +1,54 @@
+.user-container{
+    max-width: 1024px;
+    width: 100%;
+    margin: auto;
+    padding: 40px;
+     display: flex;
+     flex-direction: column;
+}
+
+.userlist{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    margin: 60px 0px;
+
+}
+
+.single-user{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(150,69,207) ;
+    padding: 10px 0px;
+}
+
+.action{
+    display: flex; 
+    align-items: center; 
+    gap: 7px;
+}
+.view{
+    background-color: rgb(94, 94, 235);
+    color: white;
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 5px;
+}
+.delete{
+    border: 1px solid red;
+    border-radius: 5px;
+    cursor: pointer;
+    background: white;
+    padding: 10px;
+    font-weight: 600;
+}
+
+.wrapper{
+    width: 100%;
+}

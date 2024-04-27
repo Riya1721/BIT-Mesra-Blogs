@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap");
+
+.blog-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5rem;
+}
+
+
+.comment-in-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.Date {
+  margin-bottom: 2rem;
+}
+
+.Cover {
+  margin-top: -4rem;
+  margin-bottom: 2rem;
+  border-radius: 2rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.blog-text {
+  width: 64vw;
+  line-height: 2.5rem;
+  margin-bottom: 2rem;
+
+  text-align: justify;
+}
+
+.Loading {
+  margin-top: 15%;
+}
+
+.top-wrapper {
+  width: 100%;
+  height: 40vh;
+  background-color: #06283d;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.content-wrapper {
+  margin-top: 0rem;
+  height: 70%;
+  width: 60%;
+  display: grid;
+  color: rgb(255, 255, 255);
+  margin-bottom: 2rem;
+}
+
+.content-wrapper span {
+  margin-left: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+.content-wrapper span h1 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 900;
+}
+
+.comment-wrapper {
+  width: 52vw;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.comment-section {
+  width: 100%;
+  border: 2px solid #dadada;
+  border-radius: 7px;
+  margin-bottom: 1rem;
+}
+
+.comment-section:hover {
+  outline: none;
+  border-color: #9ecaed;
+  box-shadow: 0 0 10px #9ecaed;
+}
+
+.create-comment {
+  height: 19vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.create-comment > textarea {
+  border-radius: 10px;
+  width: 100%;
+  height: 5rem;
+  resize: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  outline: none;
+  padding-left: 0.5rem;
+  padding-top: 0.5rem;
+  font-family: "Nunito", sans-serif;
+  font-size: 0.9rem;
+}
+
+.create-comment > button {
+  margin: 0.5rem;
+  padding: 6px;
+  width: 60px;
+  height: 40px;
+  cursor: pointer;
+  align-self: end;
+  border: none;
+  background-color: #2192ff;
+  color: white;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.comment-title {
+  margin-left: 0px;
+  padding: 12px;
+}
+
+.comments {
+  border-bottom: 0.8px solid rgba(128, 128, 128, 0.27);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.comment-text {
+  margin-left: 55px;
+  color: rgb(128, 128, 128);
+}
+
+.comment-scroller {
+  height: 50vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.label-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.SavePost {
+  height: 25px;
+  width: 25px;
+  margin-right: 0px;
+}
+
+@media (max-width: 475px) {
+  .Cover {
+    height: 25vh;
+  }
+  .comments {
+    padding: 20px 0px;
+  }
+  .comment-wrapper {
+    width: 95vw;
+    box-shadow: none;
+    flex-direction: column;
+    margin-bottom: 0px;
+  }
+  .create-comment {
+    height: 14vh;
+  }
+  .comment-scroller {
+    margin-top: 2rem;
+    height: 40vh;
+  }
+  .Loading {
+    margin-top: 80%;
+  }
+  .content-wrapper {
+    width: 85%;
+  }
+  .blog-text {
+    font-size: 18px;
+    line-height: 1.8rem;
+    width: 80vw;
+    text-align: justify;
+  }
+}

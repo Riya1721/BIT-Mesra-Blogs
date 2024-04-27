@@ -1,0 +1,45 @@
+.TopInfo {
+  margin-top: 2rem;
+  width: 90%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.Title {
+  margin-left: 0;
+  padding-left: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.TotalViews {
+  margin-right: 0;
+  padding-right: 20px;
+  font-weight: bold;
+}
+
+.PostWrapper {
+  margin-top: 2rem;
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+}
+
+@media (max-width: 1130px) {
+  .PostWrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 900px) {
+  .PostWrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .PostWrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

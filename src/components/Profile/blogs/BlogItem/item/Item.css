@@ -1,0 +1,19 @@
+.Posts{
+    width: 240px;
+    height: 180px;
+    background-color: gray;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    border-radius: 5%;
+}
+
+.image:hover{
+    opacity: 0.8;
+}
+
+.Posts:hover{
+    background-color:black;
+}

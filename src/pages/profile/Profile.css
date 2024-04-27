@@ -1,0 +1,97 @@
+.Wrapper {
+  max-width: 1226px;
+}
+
+.ProfileWrapper {
+  margin-top: 1rem;
+  width: 60%;
+  display: flex;
+}
+
+.right-side {
+  width: 50%;
+  padding-top: 2rem;
+}
+
+.left-side {
+  width: 30%;
+  display: flex;
+}
+
+.profile-info {
+  width: 100%;
+  margin-top: 2rem;
+  /* display: flex; */
+  margin-left: 23px;
+}
+
+.user_name {
+  margin-left: 1.4rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.switch-section {
+  margin-top: 3rem;
+  width: 89%;
+  height: 2.5rem;
+  display: flex;
+  border-top: 1.5px solid rgba(128, 128, 128, 0.534);
+}
+
+.switch-box {
+  width: 250px;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.switch-left {
+  margin-top: -1.5px;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  cursor: pointer;
+}
+
+.switch-right {
+  margin-top: -1.5px;
+  display: flex;
+  align-items: flex-end;
+  cursor: pointer;
+}
+
+@media (max-width: 475px) {
+  .left-side {
+    display: flex;
+    align-items: center;
+  }
+  .left-side > img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+  }
+  .right-side {
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+  .ProfileWrapper {
+    width: 90%;
+  }
+  .profile-info {
+    margin-top: 0px;
+  }
+  .profile-info > div {
+    margin-left: 0px;
+    margin-top: 8px;
+  }
+  .profile-info > div > span {
+    font-size: 12px;
+  }
+  .user_name {
+    margin-left: 0;
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,36 @@
+.menu-list {
+  height: 65vh;
+  margin-top: 2vh;
+  border-top: 1px solid #dff6ff;
+  padding-top: 2vh;
+  border-bottom: 1px solid #dff6ff;
+}
+
+.nav-item-conatiner {
+  width: 95vw;
+  height: 6vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #06283d;
+  margin-top: 1rem;
+}
+
+.nav-item-conatiner:hover {
+  background-color: rgba(255, 255, 255, 0.393);
+}
+
+.nav-icon {
+  box-sizing: border-box;
+  box-shadow: 5px 5px 10px solid grey;
+}
+
+.nav-title {
+  box-sizing: border-box;
+  flex-basis: 85%;
+  font-weight: 100;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #fff;
+}
