@@ -19,16 +19,8 @@ const Registration = () => {
   const navigate = useNavigate();
 
   const handleRegistration = () => {
-    const emailRegex = /^[^\s@]+@bitmesra\.ac\.in$/i;
     if (password !== confirmPassword) {
       alert("Passwords do not match");
-      return;
-    }
-
-    if (!emailRegex.test(email)) {
-      alert(
-        "Invalid email format or domain. Please use an @bitmesra.ac.in email."
-      );
       return;
     }
 
@@ -53,20 +45,6 @@ const Registration = () => {
         console.error("Registration error:", error.message);
         alert("Registration failed. Please try again.");
       });
-
-    // auth.onAuthStateChanged((user) => {
-    //   if (user) {
-    //     if (user.emailVerified) {
-    //       console.log("Email verified!");
-    //     } else {
-    //       console.log("Email not verified!");
-    //       alert("Please verify your email before signing in.");
-    //       auth.signOut();
-    //     }
-    //   } else {
-    //     console.log("User signed out");
-    //   }
-    // });
   };
 
   const userCollection = async (user) => {
